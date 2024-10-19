@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>test</title>
+    <title>csv2json</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>test</h1>
+<p id="heading">CSV to JSON Converter</p>
+<p class="small"><a href="json2csv/json2csv.html" target="_blank">JSON to CSV Converter</a>
+<hr />
+<p>Paste Your CSV Here:</p>
+<textarea id="csv" class="text">"Id","UserName"
+"1","Sam Smith"
+"2","Fred Frankly"
+"1","Zachary Zupers"</textarea>
+<br />
+<button id="convert">Convert to JSON</button>
+&nbsp;&nbsp;
+<button id="download">Download JSON</button>
+<textarea id="json" class="text"></textarea>
+
+<script src="converter.js" type="module"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 </body>
 </html>
